@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .static{
+            position: static;
+            background-color: lightblue;
+            width: 200px;
+            height: 40px;
+            padding: 50px;
+            
+        }
+        .relative{
+            position: relative;
+            background-color: lightgreen;
+            width: 400px;
+            height: 40px;
+            padding:30px;
+             top: 0.5px;
+            left: 40px;
+            border: 2px solid black;
+        }
+        .absolute-container{
+            position: relative;
+            width: 70%;
+            height: 200px;
+            background-color: lightcoral;
+            border: 1px solid black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            left: 40px;
+        }
+        .absolute{
+            position: absolute;
+            background-color: lightyellow;
+            top: 50px;
+            right: 30px;
+            padding: 30px;
+            margin-top: ;
+        }
+        .sticky{
+            position: sticky;
+            top: 10px;
+            background-color: lightpink;
+            padding: 20px;
+            border: 2px solid black;
+        }
+        .fixed{
+            position: fixed;
+            background-color: black;
+            color: white;
+            width: 200pxs;
+           bottom: 20px;
+           right: 40px;
+           padding: 20px;
+           border: 2px solid rgb(15, 176, 56);
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Position DEMO</h1>
+    <div class="static">This is a static div</div>
+    <div class="relative">This is a relative div</div>
+    
+    <div class="absolute-container">
+        <div class="absolute">This is an absolute div</div>
+    </div>
+    <div class="sticky">This is a sticky div</div>
+    <p style="height: 1000px;"></p>
+    <div class="fixed">This is a fixed div</div>
+    
+</body>
+</html>

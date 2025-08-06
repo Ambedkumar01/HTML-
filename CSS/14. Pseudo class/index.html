@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class</title>
+    <style>
+        a:hover{
+            color: rgb(224, 93, 93);
+        }
+        a:visited{
+            color: rgb(34, 215, 58);
+        
+        }
+       
+        
+        input:focus{
+            border: 2px solid rgb(34, 215, 58);
+
+        }
+        button:active{
+            background-color: rgb(43, 34, 215);
+            color: white;
+        }
+        ul li:first-child{
+            font-style: italic;
+            font-weight: bold;
+        }
+        ul li:nth-child(3){
+            color: red;
+        
+        }
+        ul li:last-child{
+            text-decoration: underline;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo class</h1>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank">Learn more about Pseudo Elements</a>
+    <br><br>
+    <button>Click Me</button>
+    <br><br>
+
+    <input type="text" placeholder="Type here..." />
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>                                
+        <li>Item 4</li>        
+
+    </ul>
+</body>
+</html>

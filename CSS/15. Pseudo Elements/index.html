@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        p::first-letter{
+            font-size: 3em;
+            color: #ff6347;
+        }
+        p::first-line{
+            font-weight: bold;
+            color: #4682b4;
+        }
+        h1::before{
+            content: "Hi, ";
+            color: blue;
+        }
+        h1::after{
+            content: " to pseudo elements!! ";
+            font-style: italic;
+            color: hotpink;
+    
+            
+        }
+     p::selection{
+        background-color: yellow;
+        color: rgb(230, 20, 20);
+        font-size: 1px;
+     }
+       
+    </style>
+</head>
+<body>
+
+    <h1>WELCOME</h1>
+    <p>This is a demonstration of CSS Pseudo Elements.
+        <br>CSS Pseudo Elements are used to style specific parts of an element.
+        <br>For example, you can use them to add content before or after an element, or to style the first letter or line of a paragraph.
+        <br>In this example, we will explore how to use the ::before and ::after pseudo elements to add decorative content to our HTML elements.
+        <br>Check the CSS file for the styles applied to this page.
+    </p>
+</body>
+</html>

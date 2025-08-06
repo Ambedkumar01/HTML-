@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        button{
+            background-color: rgb(34, 161, 228);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            
+        }
+        .delete-button {
+            background-color: crimson;
+        }
+        .disabled {
+            background: rgb(219, 215, 215);
+            cursor: not-allowed;
+        }
+        button:hover{
+            background: rgb(33, 10, 138);
+        }
+        .danger{
+            background: blue;
+            color: white;
+            padding: 10px  15px;
+            border: none;
+            border-radius: 20px;
+        }
+        .danger:hover{
+            background: rgb(186, 82, 234);
+        }
+    </style>
+</head>
+<body>
+    <h1> Buttons in HTML</h1>
+    <br>
+    <button>Click me</button>
+    <br><br>
+    <button>Log in</button>
+    <br> <br>
+    <button  class="delete-button">Delete</button>
+    <br><br>
+    <button disabled class="disabled">Register</button>
+    <br> <br>
+    <input class="danger"type="submit" value="Submit">
+    <br> <br>
+    <input class="danger" type="reset" value="Reset">
+    
+</body>
+</html>

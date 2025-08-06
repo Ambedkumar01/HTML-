@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        .navbar{
+            background-color: #333a;
+            
+        }
+        .navbar ul{
+            list-style: none;
+            display: flex;
+            padding: 0px;
+            margin: 0;
+        }
+        .navbar li{
+             position: relative;
+            
+        }
+        .navbar a{
+             text-decoration: none;
+             color: white;
+             padding: 14px 20px;
+             display: block;
+        }
+        .navbar a:hover{
+            background-color: #80e777;
+            color :black;
+            transition: 0.3s;
+        }
+        .dropdown{
+                display: none;
+                position: absolute;
+                background-color: #333a;
+                top: 48px;
+                min-width: 200px;
+        }
+        .dropdown a{
+            padding: 10px 20px;
+            background-color: rgba(196, 55, 55, 0.667);
+        }
+        .navbar li:hover .dropdown{
+            display: block;
+            background-color: #333a;
+        }
+
+
+
+        nav
+        div
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Services<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-360 280-560h400L480-360Z"/></svg></a>
+                   <div class="dropdown">
+                     <a href="#">Web Design</a>
+                     <a href="#">SEO</a>
+                     <a href="#">Hosting</a>
+                  </div>
+             </li>
+           <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

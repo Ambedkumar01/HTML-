@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(20, 19, 19);
+        }
+        body{
+            background-color: rgb(202, 208, 202);
+            color: rgb(14, 1, 1);
+            
+        }
+        form{
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+        
+            bottom: 30px;
+            
+        }
+        label{
+            display: block;
+            margin-top: 10px;
+        }
+        input,select,textarea{
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+            }
+            button{
+                padding: 10px 20px;
+                background-color: rgb(86, 43, 242);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                
+            }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+  <form action="submit">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your fullname" required>
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" reguired>
+    <br><br>
+    <label >Gender:</label>
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="female">Female
+    <br><br>
+    <label for="hobbies">Hobbies:</label>
+    <input type="checkbox" value="reading">Reading
+    <input type="checkbox" value="singing">Singing
+    <input type="checkbox" value="writing">Writing
+    <input type="checkbox" value="playing">playing
+    <input type="checkbox" value="programming">programming
+    <br><br>
+    <label for="city">City:</label>
+    <select name="city" id="city">
+       <option value="select">--select--
+        <option value="imphal">Imphal</option>
+        <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="hyderabad">Hyderabad</option>
+        <option value="banglore">Banglore</option>
+        <option value="chennnai">Chennai</option>
+        <option value="maharastra">Maharastra</option>
+       </option>
+    </select>
+    <br><br>
+    <label for="message">Message:</label>
+    <textarea  id="message" rows="3" placeholder="Drop some message"></textarea>
+    <br><br>
+    <Button type="submit">Register</Button>
+    <button type="reset">Reset</button>
+    
+  </form> 
+</body>
+</html>

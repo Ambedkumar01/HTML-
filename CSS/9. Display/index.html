@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .block{
+            background-color: lightblue;
+            padding: 10px;
+           display: block;
+           margin-bottom: 10px; 
+
+        }
+        .inline{
+        
+            display: inline;
+            background-color: lightgreen;
+            padding: 10px;
+            width: 100px;
+            height: 40px;
+
+        }
+        .inline-block{
+            display: inline-block;
+            background-color: lightcoral;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100px;
+        }
+        .none{
+            display: none;
+            background-color: rgb(92, 88, 88);
+            padding: 10px;s
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display properties in CSS</h1>
+    <div class="block">This is a block element.</div>
+    
+    <span class="inline">This is an inline element</span>
+    <span class="inline">This is another inline element.</span>
+    
+    <div class="inline-block">This is an inline-block element.</div>
+    <div class="inline-block">This is another inline-block element</div>
+    <div class="none">This is a none element.This element will not be displayed.</div>
+    <p>NOTE: <br>Block elements take up the full width available and starts on a new line 
+        while inline elements only take up as much width as necessary.
+         Inline-block elements are similar to inline elements, but they
+          can have width and height set. None elements are not displayed at all.</p>
+</body>
+</html>

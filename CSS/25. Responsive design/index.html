@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        body{
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        .box{
+            color: white;
+            flex: 1;
+            height: 200px;
+            background-color: brown;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        @media(max-width:768px){
+            .container{
+                flex-direction:column;
+                
+            }
+            .box{
+                font-size:2em ;
+                background-color: blue;
+                padding: 10vw;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">RESPONSIVSE DESIGN</h1>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+</body>
+</html>

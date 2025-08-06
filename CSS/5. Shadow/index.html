@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        h1,p{
+            text-align: center;
+            font-size: 40px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        }
+        .inside-shadow {
+            width: 300px;
+            margin: 50px;
+            padding: 30px;
+            background-color: rgb(234, 230, 230);
+            box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .outside-shadow {
+            width: 300px;
+            margin: 50px;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Shadow demonstration</h1>
+    <p>This is a demonstration of the shadow effect in CSS.</p>
+    <div class="inside-shadow">Inside box shadow</div>
+    <div class="outside-shadow">Outside box shadow</div>
+</body>
+</html>

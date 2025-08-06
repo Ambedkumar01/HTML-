@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <style>
+         .Pagination{
+            display: flex;
+            justify-content: center;
+            list-style:none;
+            padding: 0;
+        }
+        .Pagination li {
+            margin: 0 10px;
+        }
+        .Pagination a{
+            background-color: beige;
+            text-decoration: none;
+            padding: 5px 20px;
+            border-radius: 5px;
+            display: block;
+            transition: 0.4s;
+        }
+        .Pagination a:hover{
+            background-color: #874deb;
+            color: white;
+
+        }
+        .Pagination a:active{
+            background-color: #eb4d58;
+            color: white;
+            
+        }
+         
+    </style>
+</head>
+<body>
+    <h1>Pagination Demo</h1>
+    <ul class="Pagination">
+        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+             width="24px" fill="#1f1f1f"><path d="M560-280 360-480l200-200v400Z"/></svg>
+              </a></li>
+        <li><a href="#">page2</a></li>
+        <li class="active"><a href="#">page3</a></li>
+        <li><a href="#">page4</a></li>
+        <li><a href="#">page5</a></li>
+        <li><a href="#">page6</a></li>
+        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#1f1f1f"><path d="M400-280v-400l200 200-200 200Z"/></svg></a></li>
+    </ul>
+</body>
+</html>

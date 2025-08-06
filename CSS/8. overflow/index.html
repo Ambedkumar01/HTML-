@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        div{ 
+            width: 300px;
+            height: 105px;
+            border: 4px solid black;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        .visible{
+            overflow: visible;
+        }
+        .hidden{
+            overflow: hidden;
+        }
+        .scroll{
+            overflow: scroll;
+        }
+        .auto{
+            overflow:auto ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overflow</h1>
+    <p>This page demonstrates how to handle overflow in CSS.</p>
+    <div class="visible">
+        <strong>Visible:</strong> This text is visible and will not overflow.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam deleniti
+         facilis ea ratione eaque deserunt sed iure iusto explicabo dicta.
+          Velit libero ratione facere ipsam.
+
+    </div>
+    <div class="hidden">
+        <strong>Hidden:</strong> This text is hidden and will overflow.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nesciunt. 
+        Quia deserunt esse cumque? Maxime earum porro sapiente ipsam, ratione
+         veritatis id dolore minima accusantium laboriosam, blanditiis in nisi 
+         rem et quia. Id nemo, soluta sint provident, laborum et fuga deserunt repellat
+          laboriosam a hic, blanditiis animi commodi odit fugit!
+    </div>
+    <div class="scroll">
+        <strong>Scroll:</strong> This text is scroll and will overflow.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nesciunt.
+        Quia deserunt esse cumque? Maxime earum porro sapiente ipsam, ratione
+        veritatis id dolore minima accusantium laboriosam, blanditiis in nisi
+        rem et quia. Id nemo, soluta sint provident, laborum et fuga deserunt repellat
+        laboriosam a hic, blanditiis animi commodi odit fugit!
+    </div>
+    <div class="auto">
+        <strong>Auto:</strong> This text is auto and will overflow.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nesciunt.
+        Quia deserunt esse cumque? Maxime earum porro sapiente ipsam, ratione
+        veritatis id dolore minima accusantium laboriosam, blanditiis in nisi
+        rem et quia. Id nemo, soluta sint provident, laborum et fuga deserunt repellat
+        laboriosam a hic, blanditiis animi commodi odit fugit!
+    </div>
+</body>
+</html>
